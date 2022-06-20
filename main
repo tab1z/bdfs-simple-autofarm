@@ -1,3 +1,4 @@
+if game.PlaceId == 2882332175 then
 local Notification = Instance.new("ScreenGui")
 local TweenFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -34,3 +35,4 @@ end
 coroutine.wrap(TweenScript)()
 game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
 game:GetService("TeleportService"):Teleport(2882332175, game:GetService("Players").LocalPlayer)
+end
