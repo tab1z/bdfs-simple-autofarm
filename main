@@ -33,6 +33,7 @@ local function TweenScript()
 	script.Parent:TweenPosition(UDim2.new(0, 0,0, 0), "Out", "Quad")
 end
 coroutine.wrap(TweenScript)()
+wait(0.3)
 game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
 game:GetService("TeleportService"):Teleport(2882332175, game:GetService("Players").LocalPlayer)
 end
