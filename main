@@ -1,2 +1,36 @@
+local Notification = Instance.new("ScreenGui")
+local TweenFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+Notification.Name = "Notification"
+Notification.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Notification.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Notification.DisplayOrder = 69420
+Notification.ResetOnSpawn = false
+TweenFrame.Name = "TweenFrame"
+TweenFrame.Parent = Notification
+TweenFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TweenFrame.BackgroundTransparency = 0.500
+TweenFrame.BorderColor3 = Color3.fromRGB(42, 42, 42)
+TweenFrame.BorderSizePixel = 2
+TweenFrame.Position = UDim2.new(0, 0, -3, 0)
+TweenFrame.Size = UDim2.new(1, 0, -0.078527607, 100)
+TweenFrame.Visible = false
+TextLabel.Parent = TweenFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, -640, 0.5, -13)
+TextLabel.Size = UDim2.new(0, 1281, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Make sure to put the auto-farm script in your auto-execute folder. Made by tabz#7559"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextTransparency = 0.200
+local function TweenScript()
+	local script = Instance.new("LocalScript", TweenFrame)
+	script.Parent.Visible = true
+	script.Parent:TweenPosition(UDim2.new(0, 0,0, 0), "Out", "Quad")
+end
+coroutine.wrap(TweenScript)()
 game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
 game:GetService("TeleportService"):Teleport(2882332175, game:GetService("Players").LocalPlayer)
