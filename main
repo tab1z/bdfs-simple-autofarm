@@ -36,7 +36,7 @@ local function TweenScript()
 	script.Parent:TweenPosition(UDim2.new(0, 0,0, 0), "Out", "Quad")
 	wait(3)
 	script.Parent:TweenPosition(UDim2.new(0, 0,-3, 0), "Out", "Quad")
-	wait(1)
+	wait(5)
 	Notification:Destroy()
 end
 coroutine.wrap(TweenScript)()
