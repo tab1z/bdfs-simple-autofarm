@@ -1,7 +1,7 @@
 if game.PlaceId == 2882332175 then
 repeat wait() until game:IsLoaded()
-game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
-game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
+local stuped = game:GetService("Players").LocalPlayer.Character or game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+stuped:WaitForChild("Humanoid").Health = 0
 game:GetService("TeleportService"):Teleport(2882332175, game:GetService("Players").LocalPlayer)
 else
 local Notification = Instance.new("ScreenGui")
