@@ -1,5 +1,5 @@
 if game.PlaceId == 2882332175 then
-repeat wait() until game:GetService("Players").LocalPlayer:WaitForChild("Character")
+repeat wait() until game:IsLoaded()
 game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Health = 0
 game:GetService("TeleportService"):Teleport(2882332175, game:GetService("Players").LocalPlayer)
 else
